@@ -1,0 +1,12 @@
+import numpy as np
+matriz = np.zeros([10, 10], int)
+for i in range(10):
+    for j in range(10):
+        if i < j:
+            matriz[i][j] = (2 * i + 7 * j) - 2
+        elif i == j:
+            matriz[i][j] = ((3 * i) ** 2) - 1
+        elif i > j:
+            matriz[i][j] = ((4 * i) ** 3) - ((5 * j) ** 2) + 1
+
+print(matriz)
